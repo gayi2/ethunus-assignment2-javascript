@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/style9.css">
+</head>
+<body>
+  <form onsubmit="return validateForm()" class="form">
+    <h2>Registration form</h2>
+
+    <label>First Name <input type="text" id="fname"><span id="fnameError" class="error"></span></label>
+    <label>Last Name <input type="text" id="lname"><span id="lnameError" class="error"></span></label>
+    <label>Email <input type="email" id="email"><span id="emailError" class="error"></span></label>
+    <label>Password <input type="password" id="password"><span id="passwordError" class="error"></span></label>
+    <label>Re-enter Password <input type="password" id="repassword"><span id="repasswordError" class="error"></span></label>
+
+    <label>Gender:
+      <input type="radio" name="gender" value="male" checked> Male
+      <input type="radio" name="gender" value="female"> Female
+    </label>
+
+    <label>Age <input type="number" id="age"><span id="ageError" class="error"></span></label>
+    <label>Phone Number <input type="text" id="phone"><span id="phoneError" class="error"></span></label>
+    <label>Address <textarea id="address"></textarea><span id="addressError" class="error"></span></label>
+    <label>State <input type="text" id="state"><span id="stateError" class="error"></span></label>
+
+    <label>Country
+      <select id="country">
+        <option value="">Choose your country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+      </select>
+    </label>
+
+    <label>Languages Known:
+      <input type="checkbox" value="English"> English
+      <input type="checkbox" value="Hindi"> Hindi
+      <input type="checkbox" value="Kannada"> Kannada
+      <input type="checkbox" value="Telugu"> Telugu
+    </label>
+
+    <label><input type="checkbox" required> Hereby I declare all the given details are true</label>
+
+    <button type="submit">REGISTER</button>
+  </form>
+
+  <script src="script/script9.js"></script>
+</body>
+</html>
